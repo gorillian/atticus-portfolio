@@ -1,8 +1,8 @@
-import sagie from "../images/sagie.jpg";
-import dreads from "../images/dreads.jpg";
-import double from "../images/double.jpg";
-import blonde from "../images/blonde.jpg";
-import blondepose from "../images/blondepose.jpg";
+import sagie from "../../images/sagie.jpg";
+import dreads from "../../images/dreads.jpg";
+import double from "../../images/double.jpg";
+import blonde from "../../images/blonde.jpg";
+import blondepose from "../../images/blondepose.jpg";
 
 const imageInfo = [
   {

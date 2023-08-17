@@ -1,4 +1,4 @@
-import projectInfo from "../../util/projectInfo";
+import projectInfo from "../util/projectInfo";
 import { NavLink } from "react-router-dom";
 
 export default function Home() {

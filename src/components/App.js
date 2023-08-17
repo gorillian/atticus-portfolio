@@ -8,16 +8,15 @@ import Resume from "./pages/Resume";
 import Curatorial from "./pages/Curatorial";
 import Work from "./pages/Work";
 import Projects from "./pages/Projects";
-import imageInfo from "../util/imageInfo";
-import projectInfo from "../util/projectInfo";
+import imageInfo from "./util/imageInfo";
+import projectInfo from "./util/projectInfo";
 
-import NavBar from "../nav/NavBar";
+import NavBar from "./nav/NavBar";
 
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        <div>Hello from Atticus home</div>
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />

@@ -1,4 +1,4 @@
-import art from "../images/grace_riso cloud.jpeg";
+import art from "../../images/grace_riso cloud.jpeg";
 
 const projectInfo = [
   {
