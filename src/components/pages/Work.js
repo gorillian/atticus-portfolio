@@ -1,29 +1,29 @@
 export default function Work(props) {
-  function renderCorrectImage() {
-    return props.imageInfo.map((image) => {
-      if (parseInt(props.match.params.slug) === image.id) {
-        return (
-          <div key={image.id}>
-            <img
-              src={image.image}
-              alt={`this is ${image.name}`}
-              style={{ height: "85vh" }}
-            />
-            <div>{image.name}</div>
-            <div> {image.description}</div>
-          </div>
-        );
-      } else {
-        return null;
-      }
-    });
-  }
-
   return (
     <div className="work-container">
-      <div>Hello from Work {props.match.params.slug}</div>
-      <div>{renderCorrectImage()}</div>
-      <button onClick={() => props.history.goBack()}>Go Back</button>
+      <div>
+        {props.imageInfo.map((image) => {
+          if (parseInt(props.match.params.slug) === image.id) {
+            return (
+              <div key={image.id} className="work-info-wrapper">
+                <img src={image.image} alt={`this is ${image.name}`} />
+                <div className="details-wrapper">
+                  <h3>{image.name}</h3>
+                  <div> {image.description}</div>
+                  <button
+                    className="go-back-btn"
+                    onClick={() => props.history.goBack()}
+                  >
+                    Go Back
+                  </button>
+                </div>
+              </div>
+            );
+          } else {
+            return null;
+          }
+        })}
+      </div>
     </div>
   );
 }

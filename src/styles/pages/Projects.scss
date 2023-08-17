@@ -1,0 +1,13 @@
+.image-grid-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 60vw;
+  }
+}
+.description-wrapper {
+  margin: 40px;
+  width: 75vw;
+  text-align: justify;
+}
